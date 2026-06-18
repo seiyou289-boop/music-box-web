@@ -1,0 +1,200 @@
+[
+  {
+    "id": 1781784985939,
+    "createdAt": "2026-06-18T12:16:25.939Z",
+    "weather": "cloudy",
+    "mood": "calm",
+    "theme": "Evening Chill",
+    "songs": [
+      {
+        "id": "42030554",
+        "songId": "2099327284",
+        "name": "Underwater",
+        "artist": "Red Velvet",
+        "message": "That was beautiful. Up next, a track that always reminds me why I love doing this show.",
+        "lyrics": "",
+        "order": 0
+      },
+      {
+        "id": "36986824",
+        "songId": "1454897840",
+        "name": "莫问归期",
+        "artist": "蒋雪儿Snow.J",
+        "message": "Gorgeous, wasn't it? Let's keep that mood going. Here's another one I think you'll adore.",
+        "lyrics": "",
+        "order": 1
+      },
+      {
+        "id": "20042312",
+        "songId": "29932568",
+        "name": "无地自容(live版)",
+        "artist": "韩红, 孙楠, 萧敬腾, 黄绮珊, 陶喆",
+        "message": "A personal favourite of mine. And now, switching gears just slightly — this next one is pure magic.",
+        "lyrics": "",
+        "order": 2
+      },
+      {
+        "id": "89230829",
+        "songId": "5025749",
+        "name": "The Good, the Bad and the Ugly - Il Buono, Il Brutto, Il Cattivo (Titles)",
+        "artist": "Ennio Morricone",
+        "message": "I could listen to that all day. But we've got more to get through. Here's what's next.",
+        "lyrics": "",
+        "order": 3
+      },
+      {
+        "id": "54959361",
+        "songId": "467164485",
+        "name": "Apocalypse",
+        "artist": "Cigarettes After Sex",
+        "message": "Simply stunning. You know, some songs just feel like they were made for nights like this. Like this one.",
+        "lyrics": "",
+        "order": 4
+      },
+      {
+        "id": "32450344",
+        "songId": "444058254",
+        "name": "K.",
+        "artist": "Cigarettes After Sex",
+        "message": "What a track. Now, this next artist... I've been waiting all week to play this. Take a listen.",
+        "lyrics": "",
+        "order": 5
+      },
+      {
+        "id": "57843974",
+        "songId": "150633",
+        "name": "天天",
+        "artist": "陶喆",
+        "message": "Perfect for a cloudy evening, don't you think? Let's keep going.",
+        "lyrics": "",
+        "order": 6
+      },
+      {
+        "id": "70040922",
+        "songId": "26243686",
+        "name": "Young And Beautiful",
+        "artist": "Lana Del Rey",
+        "message": "The kind of song you want to replay immediately. But trust me, what's coming next is worth it.",
+        "lyrics": "",
+        "order": 7
+      },
+      {
+        "id": "27525584",
+        "songId": "299640",
+        "name": "开到荼蘼",
+        "artist": "王菲",
+        "message": "That was beautiful. Up next, a track that always reminds me why I love doing this show.",
+        "lyrics": "",
+        "order": 8
+      },
+      {
+        "id": "73563257",
+        "songId": "2146555555",
+        "name": "PASSO BEM SOLTO",
+        "artist": "Atlxs",
+        "message": "",
+        "lyrics": "",
+        "order": 9
+      }
+    ]
+  },
+  {
+    "id": 1781782128897,
+    "createdAt": "2026-06-18T11:28:48.897Z",
+    "weather": "多云",
+    "mood": "温柔慵懒",
+    "theme": "傍晚放松",
+    "songs": [
+      {
+        "id": "69568968",
+        "songId": "1870469768",
+        "name": "老人と海",
+        "artist": "ヨルシカ",
+        "message": "今天心情很好，听一首歌吧~",
+        "lyrics": "",
+        "order": 0
+      },
+      {
+        "id": "49524723",
+        "songId": "300136",
+        "name": "暗涌",
+        "artist": "王菲",
+        "message": "这首歌很适合现在听",
+        "lyrics": "",
+        "order": 1
+      },
+      {
+        "id": "92576266",
+        "songId": "255574",
+        "name": "恶作剧",
+        "artist": "林依晨",
+        "message": "希望你喜欢这首",
+        "lyrics": "",
+        "order": 2
+      },
+      {
+        "id": "12403268",
+        "songId": "3324846858",
+        "name": "潇洒",
+        "artist": "TizzyT, GALI, 马思唯",
+        "message": "安静的午后听这个",
+        "lyrics": "",
+        "order": 3
+      },
+      {
+        "id": "47002441",
+        "songId": "306665",
+        "name": "一样的月光",
+        "artist": "徐佳莹",
+        "message": "节奏轻快的一首",
+        "lyrics": "",
+        "order": 4
+      },
+      {
+        "id": "71766064",
+        "songId": "372359",
+        "name": "咏春",
+        "artist": "七朵组合",
+        "message": "今天心情很好，听一首歌吧~",
+        "lyrics": "",
+        "order": 5
+      },
+      {
+        "id": "80816125",
+        "songId": "1923385373",
+        "name": "West Coast",
+        "artist": "OneRepublic",
+        "message": "这首歌很适合现在听",
+        "lyrics": "",
+        "order": 6
+      },
+      {
+        "id": "38829911",
+        "songId": "2099327284",
+        "name": "Underwater",
+        "artist": "Red Velvet",
+        "message": "希望你喜欢这首",
+        "lyrics": "",
+        "order": 7
+      },
+      {
+        "id": "35166799",
+        "songId": "28064267",
+        "name": "Red Rock Riviera",
+        "artist": "Sea Power",
+        "message": "安静的午后听这个",
+        "lyrics": "",
+        "order": 8
+      },
+      {
+        "id": "70779401",
+        "songId": "1358244777",
+        "name": "望穿 (Live)",
+        "artist": "吴青峰, 陈粒",
+        "message": "节奏轻快的一首",
+        "lyrics": "",
+        "order": 9
+      }
+    ]
+  }
+]
