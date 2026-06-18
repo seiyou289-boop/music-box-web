@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: '氵赛电台',
+  title: '赛赛电台初代目',
   description: '每天根据你的心情和天气，生成一份专属歌单',
 };
 

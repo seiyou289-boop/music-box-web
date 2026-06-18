@@ -371,7 +371,7 @@ export default function MusicBoxClient() {
       {/* 左侧播放器 */}
       <div style={{ width:380, minWidth:380, display:'flex', flexDirection:'column', borderRight:'1px solid var(--border)', padding:24, gap:16 }}>
         {/* 标题 */}
-        <div style={{ fontSize:20, fontWeight:'bold', color:'var(--accent)', letterSpacing:2 }}>◈ 赛赛fm</div>
+        <div style={{ fontSize:20, fontWeight:'bold', color:'var(--accent)', letterSpacing:2 }}>◈ 赛赛电台初代目</div>
         <div style={{ fontSize:11, color:'var(--text2)', fontFamily:'Courier New, monospace' }}>{clock}</div>
 
         {/* 当前天气/心情/主题 */}

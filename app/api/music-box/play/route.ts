@@ -1,26 +1,23 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-const LOCAL_API = 'http://localhost:3000';
-const MUSIC_U = 'MUSIC_U=00CF4F0831259AE057FAD2D97295916E7ABCBFD45A7221D2E50A8B5653E095E9438A0652E00629B4439186F70149DFE472613C476DFAE4776DC16C1B3FFC8047B94FA58073F44D1F39C6DC5CAC28A38C7F00686A4B64B907EC55C252293091C7A811468B4253146383AF54B745E0AEB27EF8212CA675AE59FB4C9310615E0575FB0C9261CCB71EA6743EB8A7ED51FDA814E842DB0D38DDA639CF9C29A615BAC9655C1ABB6E320A09F3DFA8E584A582E550C1DEB12E3057E4B7AE49B4A1C3C94E9285B13B3E4EF40BF6EF867244B1D015A79E802E7F60A786388DCEAA215907EC1CEB329C5E4016068111A0EF228B6D07CD40B26DB94BD5BE852614D208FB5C10E8CA2AABB1AFB698EE42A1132D6F7079CF849CF40AA68B1BB4353C3ED7FC1590C1EA15142649068130D09944A775EFD8CCFE63007EA944114E2959D37FD8D698A445A3D035DA9B2E6BA0FEC7EB30E5CFD4C927428D96582C0863D6DDF3BB8A7B48D720F72AFC11D78E4205B5F9D6A0937E5E40C5F9975DD33F17BF0A22A47CA342CF7923F06DCB3D695F622E74C8BAB10D672566DF109471E4DE0CA37B218388FD8EE3B8FA490DCA8363F7C5AE7E346CB8';
-
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
   const id = searchParams.get('id');
   if (!id) return NextResponse.json({ error: 'Missing id' }, { status: 400 });
 
   try {
-    // 带 cookie 获取高品质完整歌曲
-    const res = await fetch(`${LOCAL_API}/song/url?id=${id}&br=320000&cookie=${encodeURIComponent(MUSIC_U)}`);
+    // 用网易云公开 API（不需要登录就能获取试听链接）
+    const res = await fetch(`https://music.163.com/api/song/enhance/player/url?id=${id}&ids=[${id}]&br=320000`, {
+      headers: { 'Referer': 'https://music.163.com/', 'User-Agent': 'Mozilla/5.0' },
+    });
     const data = await res.json();
+    if (data.data?.[0]?.url) return NextResponse.json(data);
 
-    if (!data.data?.[0]?.url || data.data[0].fee > 0 && !data.data[0].url.includes('m80')) {
-      // 降级重试
-      const res2 = await fetch(`${LOCAL_API}/song/url?id=${id}&br=128000&cookie=${encodeURIComponent(MUSIC_U)}`);
-      const data2 = await res2.json();
-      return NextResponse.json(data2);
-    }
-
-    return NextResponse.json(data);
+    // 降级 128k
+    const res2 = await fetch(`https://music.163.com/api/song/enhance/player/url?id=${id}&ids=[${id}]&br=128000`, {
+      headers: { 'Referer': 'https://music.163.com/', 'User-Agent': 'Mozilla/5.0' },
+    });
+    return NextResponse.json(await res2.json());
   } catch (e: any) {
     return NextResponse.json({ error: e.message }, { status: 500 });
   }
